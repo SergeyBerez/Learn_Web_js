@@ -5,4 +5,4 @@ package-lock.json
 package.json
 jquery-3.4.1.min.js
 /node_modules/
-/vscode/
+./vscode/
