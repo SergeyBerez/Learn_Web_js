@@ -1,0 +1,46 @@
+div {
+  border: 1px dotted #ccc;
+  padding: 30px;
+  text-align: center;
+  background: rgb(235, 218, 218);
+}
+button {
+  transform: scale(1);
+}
+
+.cliked {
+  background: red;
+}
+
+.menu {
+  text-align: left;
+
+  list-style-type: none;
+}
+
+li {
+  margin-left: 20px;
+
+  display: inline-block;
+}
+.on-ofRed {
+  background: red;
+}
+a {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  border-radius: 10px;
+  background: rgb(167, 115, 115);
+  box-shadow: 2px 2px 10px rgb(124, 54, 54);
+}
+a:active {
+  color: wheat;
+  position: relative;
+  left: 2px;
+  bottom: -2px;
+  box-shadow: 1px 1px 10px rgb(124, 54, 54);
+}

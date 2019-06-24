@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 1024px;
+  /* overflow: hidden; */
+  /* padding: 0 40px; */
+  /* border: 1px solid #000; */
+}
+nav {
+  background: #94a394;
+  position: relative;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  float: left;
+}
+/* a {
+    text-decoration: none;
+    color: inherit;
+  } */
+.menu li a {
+  display: block;
+  width: 100px;
+  background: rgb(148, 163, 148);
+  color: rgb(19, 21, 22);
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-right: 1px solid #000;
+}
+.menu li a:hover {
+  background: rgb(148, 146, 146);
+}
+.outline {
+  border: 1px solid red;
+}
