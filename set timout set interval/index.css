@@ -1,6 +1,26 @@
 .box {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background: blueviolet;
-  position: relative;
+  position: absolute;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  color: rgb(238, 226, 226);
+  cursor: pointer;
+}
+.box1 {
+  box-sizing: border-box;
+  padding: 10px;
+  background: rgb(59, 43, 73);
+  border-radius: 50%;
+
+  color: rgb(238, 226, 226);
+  border: 1px transparent #000;
+}
+.table {
+  text-align: center;
+}
+button {
+  margin-top: 200px;
 }

@@ -43,30 +43,31 @@
     this.element = elements;
     var i = 0;
     this.selector = selector;
+    var select = this.selector;
 
-    console.log(this.selector);
     this.btn = btn;
     this.time = time || 1000;
     this.auto = auto;
     var slider = this;
     slider.next = function() {
-      slider.element[i].classList.remove('show');
+      console.log(this.selector);
+      slider.element[i].classList.remove(select);
       i++;
 
       if (i >= slider.element.length) {
         i = 0;
       }
-      slider.element[i].classList.add('show');
+      slider.element[i].classList.add(select);
     };
 
     slider.prev = function() {
-      slider.element[i].classList.remove('show');
+      slider.element[i].classList.remove(select);
       i--;
 
       if (i < 0) {
         i = slider.element.length - 1;
       }
-      slider.element[i].classList.add('show');
+      slider.element[i].classList.add(select);
     };
 
     slider.btn[0].onclick = slider.next;
@@ -81,9 +82,9 @@
 
   var btn = document.querySelectorAll('button');
   var imgs = document.querySelectorAll('.slider1 img');
-  var newSlider = new Slider(imgs, btn, 'auto', 5000, 'show');
+  var newSlider = new Slider(imgs, btn, 'false', 5000, 'show');
 
   var btn2 = document.querySelectorAll('.button');
   var imgs2 = document.querySelectorAll('.slider2 img');
-  var newSlider2 = new Slider(imgs2, btn2, 'auto', 2000);
+  var newSlider2 = new Slider(imgs2, btn2, 'false', 2000, 'show');
 })();
