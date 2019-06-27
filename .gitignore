@@ -3,3 +3,4 @@
 .stylelintrc
 /node_modules/
 /.vscode/
+gulpfile.js

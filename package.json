@@ -1,7 +1,7 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "main": "/src/index.js",
+  "main": "index.js",
   "scripts": {
     "web": "http-server -o  -p8000  src",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
     "http-server": "^0.11.1"
   },
   "repository": {
