@@ -4,3 +4,5 @@
 /node_modules/
 /.vscode/
 gulpfile.js
+prepros-6.config
+.jshintrc

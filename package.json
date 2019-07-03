@@ -1,29 +1,34 @@
 {
-  "name": "y",
+  "name": "learn-web",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "/lesson6_modal/",
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
   "scripts": {
-    "web": "http-server -o  -p8000  src",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jquery": "^3.4.1",
-    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SergeyBerez/proj_loft.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SergeyBerez/proj_loft/issues"
   },
   "homepage": "https://github.com/SergeyBerez/proj_loft#readme",
-  "description": ""
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }

@@ -14,19 +14,19 @@ window.onload = function() {
         inpts[i].classList.add('error');
         err = true;
         //console.log('err');
+      }
+      if (err) {
+        e.preventDefault();
+        console.log('e.preventDefault();');
       } else {
         inpts[i].classList.remove('error');
         // console.log('remove err');
         err = false;
       }
-
-      if (err) {
-        e.preventDefault();
-        console.log('e.preven');
-      }
     }
   }
 };
+
 // ----------- проверка отправки формы через слушатель собитий
 
 // form.addEventListener('submit', submit);

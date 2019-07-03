@@ -28,21 +28,22 @@ function anime() {
     }
   }
 }
-box.addEventListener('click', function(e) {
-  box.classList.toggle('box1');
-  if (box.classList.contains('box1'))
-    box.innerHTML = 'кликни меня я стану квадратом';
-  else {
-    box.innerHTML = 'кликни меня я стану шариком';
-  }
-});
-var buttons = document.querySelectorAll('button');
-document.querySelector('.table').addEventListener('click', function(e) {
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].
-  }
-  e.target.innerHTML = 0;
-});
+// ===================игра крестинки нолики
+// box.addEventListener('click', function(e) {
+//   box.classList.toggle('box1');
+//   if (box.classList.contains('box1'))
+//     box.innerHTML = 'кликни меня я стану квадратом';
+//   else {
+//     box.innerHTML = 'кликни меня я стану шариком';
+//   }
+// });
+// var buttons = document.querySelectorAll('button');
+// document.querySelector('.table').addEventListener('click', function(e) {
+//   for (let i = 0; i < buttons.length; i++) {
+//     buttons[i].
+//  }
+//   e.target.innerHTML = 0;
+// } );
 
 /*var timer = setTimeout(function log() {
   var box = document.querySelector('.box');
@@ -79,3 +80,15 @@ setTimeout(log, 7000);
 //     console.log('рекурия вызываю через 5сек функцию show');
 //   }, 5000);
 // }, 5000);
+
+// var money = prompt('ваш бюджет на месяц? ', 'введите число');
+// var time = prompt('Введите дату в формате YYYY-MM-DD');
+
+// var appData = {};
+// appData.money = money;
+// appData.time = time;
+// console.log(appData);
+let data1 = new Date('12-04-81');
+let data2 = new Date();
+
+console.log(data1 < data2);
