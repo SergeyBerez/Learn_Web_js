@@ -1,1 +1,22 @@
-console.log(1);
+function sum(a) {
+  let res = '';
+  console.log(a);
+  let arr = a.split(',');
+  for (let i = 0; i < arr.length; i++) {
+    res = res + arr[i];
+  }
+  return res;
+
+  // body
+}
+console.log(sum('1, 3, 4'));
+
+var user = {
+  firstName: 'Василий',
+
+  //   toString: function() {
+  //     return 'Пользователь ' + this.firstName;
+  //   },
+};
+console.log(user.toString());
+console.log(32);

@@ -6,3 +6,4 @@
 gulpfile.js
 prepros-6.config
 .jshintrc
+.browserslistrc
