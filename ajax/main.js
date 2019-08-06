@@ -1,6 +1,6 @@
 var inpt = document.querySelector("input");
 btn.addEventListener("click", () => {
-  console.log(1);
+  console.log("запрос отправлен");
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "text.txt");
   xhr.send();
