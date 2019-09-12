@@ -12,6 +12,7 @@ body {
   font-family: "PT Sans Narrow";
   font-weight: 700;
 }
+
 .wrap {
   margin: 0 auto;
   max-width: 1024px;
@@ -19,10 +20,12 @@ body {
 
   /* border: 1px solid #000; */
 }
+
 nav {
   background: rgb(148, 163, 148);
   position: relative;
 }
+
 .toggle {
   display: none;
   cursor: pointer;
@@ -33,22 +36,26 @@ nav {
 }
 
 #menuChcek {
-  display: none;
+  /* display: none; */
 }
+
 .menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 /* ставим этот класс что бы меню открывалось иначе overflov не будет выпускать меню */
 .clearfix::after {
   content: "";
   clear: both;
   display: block;
 }
+
 .menu li {
   float: left;
 }
+
 /* a {
     text-decoration: none;
     color: inherit;
@@ -63,9 +70,11 @@ nav {
   padding: 10px 15px;
   border-right: 1px solid #000;
 }
+
 .menu li a:hover {
   background: red;
 }
+
 /* a:focus {
     outline: none;
     background: red;
@@ -82,15 +91,18 @@ nav {
     display: none;
     position: absolute;
   }
+
   .menu li {
     float: none;
     /* border-bottom: 1px solid #000; */
   }
+
   .menu li a {
     border-bottom: 1px solid #000;
     border-right: 0px solid #000;
   }
-  #menuChcek:checked + .menu {
+
+  #menuChcek:checked+.menu {
     display: block;
   }
 }
@@ -98,6 +110,7 @@ nav {
 .galery {
   background: rgb(138, 127, 127);
 }
+
 figure {
   float: left;
   padding: 5px;
@@ -108,9 +121,11 @@ figure {
   text-align: center;
   border: 1px solid #000;
 }
+
 img {
   width: 100%;
 }
+
 .hidden {
   height: 0px;
   position: relative;
@@ -122,25 +137,30 @@ img {
   background: rgba(223, 201, 201, 0.356);
   border-radius: 2px;
 }
+
 figure:hover .hidden {
   height: 60px;
   top: -20px;
 }
+
 /* стили для видео тега iframe */
 
 .relation {
   max-width: 700px;
   position: relative;
 }
+
 .rilation_ration {
   padding-top: 56.3%;
   height: 0;
 }
+
 iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
+
 .relation_content {
   position: absolute;
   width: 100%;

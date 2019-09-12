@@ -1,15 +1,16 @@
-// let inp = document.querySelectorAll('[name="name"]');
-// document.querySelector('[name="send"]').addEventListener('click', function(e) {
-//   e.preventDefault();
-//   let div = document.createElement('p');
-//   div.textContent = 'привет бла бла бла ';
-//   div.style.backgroundColor = 'red';
-//   document.body.children[0].appendChild(div);
-//   for (let i = 0; i < inp.length; i++) {
-//     console.log(inp[i].value);
-//   }
-// });
+let inp = document.querySelectorAll('[name="name"]');
+document.querySelector('[name="send"]').addEventListener('click', function(e) {
+  for (let i = 0; i < inp.length; i++) {
+    console.log(inp[i].value);
+  }
+  e.preventDefault();
+});
 
+let p = document.createElement('p');
+p.textContent = 'привет бла бла бла ';
+p.style.backgroundColor = 'red';
+console.log(p);
+document.body.appendChild(p);
 // setInterval(function() {
 //   let a = Math.floor(Math.random() * 10);
 
