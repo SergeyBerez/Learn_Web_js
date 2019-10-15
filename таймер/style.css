@@ -1,0 +1,28 @@
+/* разметка для  html 
+      <span class="button">send</span>  */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: rgb(248, 210, 159);
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid rgb(109, 105, 105);
+  background: rgb(146, 148, 153);
+  box-shadow: 1px 1px 5px #000;
+  transition: 0.8s;
+  /* box-shadow: 0px -20px 0 0 rgb(6, 231, 156); */
+}
+.button:hover {
+  box-shadow: 7px 7px 6px 1px #000;
+}
