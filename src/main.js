@@ -1,1 +1,4 @@
-console.log(1);
+module.exports = function() {
+  return 'aaaa';
+  // body
+};

@@ -11,6 +11,12 @@
 //   }
 //   console.log(`server is listening on ${port}`);
 // });
-var a = require('./main');
-var b = a();
-console.log(b);
+// var a = require('./main');
+// var b = a();
+// console.log(b);
+var $ = require('jquery');
+$('div').click(function (e) { 
+  e.preventDefault();
+  console.log('sdsdsdsdsdsdsd');
+  
+});
