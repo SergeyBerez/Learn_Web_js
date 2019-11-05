@@ -1,27 +1,31 @@
 body {
   margin: 0;
   padding: 0;
-  background: #cdcde0;
+  background: #d0d0e0;
 }
 .wrap {
-  margin: 200px auto;
+  margin: 0 auto;
   max-width: 1024px;
-  height: 100%;
-  border: 1px solid #000;
+  
+  border:5px solid #000;
 }
 
 .flex-box {
+  align-items: center;
+  /* height: 100vh; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 -50px;
+  border: 2px solid rgb(240, 5, 5);
 }
 
 .block {
   /* flex-shrink: 1; */
   /* flex-basis: auto; */
-  width: 200px;
+  position: relative;
+  width: 150px;
   height: 200px;
   padding: 5px;
   box-sizing: border-box;
@@ -53,60 +57,24 @@ img {
 }
 /* скрываем текст в блоке с фото */
 .hidden {
+  width: inherit;
+  
+  position: absolute;
+  top: 170px;
+  left: 0;
   height: 0px;
-  position: relative;
-  top: 40px;
   overflow: hidden;
   transition: 0.9s;
   font-family: 'PT Sans';
-  font-size: 10px;
+  font-size: 16px;
   background: rgba(128, 128, 128);
-  flex-basis: 200px;
+ 
   border-radius: 2px;
   box-shadow: 0px 0px 5px rgb(20, 19, 19);
 }
 
 .block:hover .hidden {
   height: 70px;
-  top: -35px;
-}
-.flex-conteiner {
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0 -50px;
-  text-align: center;
-
-  /* background: rgb(92, 45, 45);
-    border: 2px solid #000; */
+  top: 100px;
 }
 
-.block1 {
-  width: auto;
-  min-height: auto;
-  display: block;
-  /* align-self: flex-end; */
-  text-align: inherit;
-  flex-basis: 200px;
-  background: rgb(199, 189, 189);
-  margin: 50px;
-}
-.block2 {
-  width: auto;
-  height: auto;
-  display: block;
-  /* align-self: auto; */
-  text-align: inherit;
-  flex-basis: 200px;
-
-  /* margin: 10px; */
-  background: rgb(228, 16, 16);
-}
-/* @media screen and (max-width: 480px) {
-    .block2 {
-      order: -1;
-    }
-  } */

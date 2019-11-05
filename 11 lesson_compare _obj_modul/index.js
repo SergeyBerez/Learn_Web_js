@@ -12,8 +12,6 @@
 //   console.log(`server is listening on ${port}`);
 // });
 
-// var sum = require("./main");
-// sum();
 
 var obj1 = {
   name2: "sergey",
