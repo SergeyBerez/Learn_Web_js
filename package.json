@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "our project",
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

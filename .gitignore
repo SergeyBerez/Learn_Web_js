@@ -2,8 +2,7 @@
 .prettierrc
 .stylelintrc
 /node_modules/
-/.vscode/
-gulpfile.js
+.vscode/
 prepros-6.config
 .jshintrc
 .browserslistrc
