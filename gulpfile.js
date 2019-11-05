@@ -5,7 +5,7 @@ let cleanCSS = require('gulp-clean-css');
 //Prefix CSS with Autoprefixer
 gulp.task('css', function() {
   return gulp
-    .src('./src/pre_css/*.css')
+    .src('./app/src/css/**/*.css')
 
     .pipe(
       autoprefixer({
@@ -14,19 +14,19 @@ gulp.task('css', function() {
       }),
     )
     .pipe(cleanCSS())
-    .pipe(gulp.dest('./src/css'))
+    .pipe(gulp.dest('./app/dist/'))
     .pipe(browserSync.stream());
 });
 // Static server
 gulp.task('server', function() {
   browserSync.init({
     server: {
-      baseDir: 'src/',
+      baseDir: 'app/',
     },
     notify: false,
   });
-  gulp.watch('./src/pre_css/*.css', gulp.series('css'));
-  gulp.watch('src/*.html').on('change', browserSync.reload);
+  gulp.watch('./app/src/css/style.css', gulp.series('css'));
+  gulp.watch('./app/*.html').on('change', browserSync.reload);
 });
 
 

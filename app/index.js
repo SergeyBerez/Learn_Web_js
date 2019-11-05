@@ -11,7 +11,7 @@
 //   }
 //   console.log(`server is listening on ${port}`);
 // });
-var a = require('./js/main.js');
+var a = require('./src/js/main.js');
 var b = a();
 console.log(b);
 // var $ = require('jquery');
