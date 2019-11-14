@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .button {
   display: block;
   box-sizing: border-box;
@@ -21,8 +22,8 @@
   background: rgb(146, 148, 153);
   box-shadow: 1px 1px 5px #000;
   transition: 0.8s;
-  /* box-shadow: 0px -20px 0 0 rgb(6, 231, 156); */
 }
+
 .button:hover {
   box-shadow: 7px 7px 6px 1px #000;
 }
