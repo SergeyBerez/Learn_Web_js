@@ -67,7 +67,7 @@ function myAxiosGet(url) {
         // console.log(xhr.response);
         resolve(arr);
       } else {
-        var error = new Error('ошибка');
+        var error = new Error('ошибка');ё
         reject(error);
       }
     };
