@@ -13,7 +13,7 @@ document.addEventListener('click', function(e) {
 
   //получем где находится елемент от родителя по умолчанию от боди если нету у родителя свойства relative
   console.log(
-    `4 элемент  partner находится относительно родителя указанного в relative ${was.offsetTop}`,
+    `4 элемент  was находится относительно родителя указанного в relative ${was.offsetTop}`,
   );
   //плучаем родителя  только нужно указать ему позишион relative
   console.log(was.offsetParent);
@@ -46,3 +46,17 @@ document.addEventListener('click', function(e) {
 //   document.body.before(div);
 //   // body
 // }
+
+// window.addEventListener('scroll', function(e) {
+//   console.log(was.getBoundingClientRect().top);
+//   if (was.getBoundingClientRect().top == 0) {
+//     setTimeout(function() {
+//       overlay.classList.add('show');
+//       modal.classList.add('show');
+//       overlay.addEventListener('click', function(e) {
+//         overlay.classList.remove('show');
+//         modal.classList.remove('show');
+//       });
+//     }, 500);
+//   }
+// });
