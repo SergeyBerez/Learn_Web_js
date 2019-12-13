@@ -26,12 +26,14 @@ document.addEventListener('click', function(e) {
   console.log(' 6 собитие мыши относительно елемента  ' + e.offsetY);
 });
 
-// document.addEventListener('mousemove', function (e) {
-//   // console.log(e.offsetY);
-//   // console.log(e.offsetX);
-//   //иплучаем элемнте где он находтся относительно окна
-//   console.log(was.getBoundingClientRect().top);
-// });
+document.addEventListener('mousemove', function(e) {
+  console.log('e.offsetY:' + e.offsetY + '   ' + 'e.offsetX' + e.offsetX);
+
+  console.log('e.clientY:' + e.clientY + '   ' + 'e.clientX:' + e.clientX);
+
+  //иплучаем элемнте где он находтся относительно окна
+  console.log(was.getBoundingClientRect());
+});
 
 // function createMes(e) {
 //   let coordTop = e.pageY;

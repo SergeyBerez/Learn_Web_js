@@ -36,20 +36,23 @@
 
 // ==================уменьшаем значенине числа от 1 до 0,1 использовать для прозрачности
 let btn2 = document.querySelector('.btn2 ');
-function fade(t) {
+function fade(t, elem) {
   let c = t;
 
   let si = setInterval(function() {
     c = c - 0.1;
+
     let x = c.toFixed(1); // возвращает строку округляет до 1 знака
-    btn2.textContent = x;
+
+    elem.textContent = x;
+    elem.style.opacity = x;
     if (x === '0.0') {
       clearInterval(si);
     }
   }, 1000);
   // body
 }
-fade(1);
+fade(1, btn2);
 
 // ==================разные способы для уменьшениея получения чисел
 //=========== остаток от деления либо  1 либо 0 выдает
@@ -77,3 +80,4 @@ setInterval(function() {
   let x = Math.round(Math.random() * (10 - 1)) + 1;
   btn3.textContent = x;
 }, 1000);
+
