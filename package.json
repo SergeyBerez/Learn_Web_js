@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/SergeyBerez/proj_loft#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
